@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pageSwitching</title>
+    <!--<link rel="stylesheet" href="css/qyy.css">-->
+    <style>
+        .pS_mask{width: 100%;height: 100%;background: rgba(0,0,0,0.3);position: fixed;z-index: 999999;left: 0;top: 0;}.color33{color: #33adee;}.margin0Auto{margin: 0 auto;}.displayB{display: block;}.fl{float: left;}.fr{float: right;}
+        .pS_center{width: 600px;height: 300px;position: fixed;z-index: 999999;left: 50%;top: 50%;margin-left: -300px;margin-top: -150px;background: #fff;border-radius: 8px;-webkit-box-shadow:0 0 10px #7c7c7c;-moz-box-shadow:0 0 10px #7c7c7c;box-shadow:0 0 10px #7c7c7c;}
+        .pS_cenCon{text-align: center;font-size: 24px;margin-top: 80px;}
+        .pS_picBox{width: 530px;height: 65px;margin-top: 50px;}
+        .pS_loading{margin: 4px 0 0 6px;}
+    </style>
+</head>
+<body>
+    <!--<article class="pS_mask posFi">
+        <section class="pS_center posFi">
+            <p class="pS_cenCon">您即将前往<span class="color33">【汇付天下】</span>完成相关操作</p>
+            <aside class="pS_picBox margin0Auto">
+                <i class="displayB fl"><img src="img/pS_ourLogo.png" alt="" class="mI_img"></i>
+                <i class="displayB fl pS_loading"><img src="img/pS_loading.gif" alt="" class="mI_img"></i>
+                <i class="displayB fr"><img src="img/pS_hftxIcon.png" alt="" class="mI_img"></i>
+            </aside>
+        </section>
+    </article>-->
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            pageSwitch();
+            function pageSwitch() {
+                var $dom = $('<article class="pS_mask">\
+            <section class="pS_center">\
+                <p class="pS_cenCon">您即将前往<span class="color33">【汇付天下】</span>完成相关操作</p>\
+            <aside class="pS_picBox margin0Auto">\
+                <i class="displayB fl"><img src="img/pS_ourLogo.png" alt="" class="mI_img"></i>\
+                <i class="displayB fl pS_loading"><img src="img/pS_loading.gif" alt="" class="mI_img"></i>\
+                <i class="displayB fr"><img src="img/pS_hftxIcon.png" alt="" class="mI_img"></i>\
+                </aside>\
+                </section>\
+                </article>');
+                $("body").prepend($dom);
+            }
+        });
+    </script>
+</body>
+</html>

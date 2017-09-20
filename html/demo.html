@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .uS_tipsCon{width: 500px;height: 300px;background: #fff;  left: 50%;top: 50%;margin-top: -150px;margin-left: -250px;padding: 20px 10px;}
+        .uS_tipsClose{margin-top: -5px;margin-right: 8px;}
+        .uS_tipsContentBox{margin: 100px 0 0 100px;}
+        .uS_tipsContentBox1{margin: 66px 50px 0 40px;}
+        .uS_tipsIcon{width: 30px;height: 30px;background: url("../img/pC_delAddrTipsImg.jpg")30px 30px;}
+        .uS_tipsContent{padding-left: 40px;}
+        .uS_atOncePay{width: 300px;height: 45px;line-height: 45px;margin: 50px 0 0 100px;}
+        .uS_atOncePay1{width: 300px;height: 45px;line-height: 45px;margin: 40px 0 0 100px;}
+        .uS_Zindex{position: fixed;z-index: 1002;background: rgba(0,0,0,0.3);}
+    </style>
+</head>
+<body>
+</body>
+<script src="../js/jquery.js"></script>
+<script>
+    ~(function() {
+        alertBox3("hahah");
+        function alertBox3(str) {
+            var $alert1 = $("<article class='alertBox1 pC_accSetItemListMask posAb'>\
+        <section class='uS_tipsCon posAb'>\
+            <span class='uS_tipsClose maskClose fr'></span>\
+            <div class='uS_tipsContentBox lineH'>\
+            <span class='uS_tipsIcon displayIB fl'></span><p class='uS_tipsContent font18'>"+str+"</p>\
+            </div>\
+            <div class='uS_atOncePay txtCenter back33'><a class='colorW font18' href='javascript:void(0);'>确定</a></div>\
+            </section>\
+            </article>");
+            $alert1.appendTo("body");
+            var $close = $(".maskClose");
+            var $ensure = $(".uS_atOncePay");
+            $(document.body).css({"overflow-y":"hidden"});
+            $close.click(function() {
+                $(".alertBox1").remove();
+                $(document.body).css({"overflow-y":"auto"});
+            });
+            $ensure.click(function() {
+                fn();
+            });
+        }
+    })();
+</script>
+</html>

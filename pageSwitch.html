@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pageSwitch</title>
+    <style>
+        .pageCon{width: 560px;height: 150px;margin: 200px auto 0;}
+        .pageConP{text-align: center;margin-bottom: 50px;}
+        .pageGo{color: #33a6ee;text-decoration: none;}
+        .pageArrow{margin: 0 auto;}
+        span{color: #ccc;font-size: 28px;}
+        span:nth-of-type(1){-webkit-animation: MyProcess 2s infinite;animation: MyProcess 2s infinite;}
+        span:nth-of-type(2){-webkit-animation: MyProcess 2s 2s infinite;animation: MyProcess 2s 2s infinite;}
+        span:nth-of-type(3){-webkit-animation: MyProcess 2s 3s infinite;animation: MyProcess 2s 3s infinite;}
+        span:nth-of-type(4){-webkit-animation: MyProcess 2s 4s infinite;animation: MyProcess 2s 4s infinite;}
+        span:nth-of-type(5){-webkit-animation: MyProcess 2s 5s infinite;animation: MyProcess 2s 5s infinite;}
+        .pageIconBox{width: 181px;height: 61px;display: block;float: left;}
+        .pageArrowBox{float: left;margin: 10px 0 0 40px;}
+        .pageIconBox img{width: 100%;height: 100%;}
+        @keyframes MyProcess {
+            0%{color: #ccc;}
+            25%{color: #19baf0;}
+            50%{color: #19baf0;}
+            75%{color: #ccc;}
+            100%{color: #19baf0;}
+        }
+        @-webkit-keyframes MyProcess {
+            0%{color: #ccc;}
+            25%{color: #19baf0;}
+            50%{color: #19baf0;}
+            75%{color: #ccc;}
+            100%{color: #19baf0;}
+        }
+        @-moz-keyframes MyProcess {
+            0%{color: #ccc;}
+            25%{color: #19baf0;}
+            50%{color: #19baf0;}
+            75%{color: #ccc;}
+            100%{color: #19baf0;}
+        }
+        @-o-keyframes MyProcess {
+            0%{color: #ccc;}
+            25%{color: #19baf0;}
+            50%{color: #19baf0;}
+            75%{color: #ccc;}
+            100%{color: #19baf0;}
+        }
+    </style>
+</head>
+<body>
+<article class="pageCon">
+    <p class="pageConP">您即将前往<a class="pageGo" href="javascript:void(0);">XXXXX</a>，完成相关操作</p>
+    <section class="pageArrow">
+        <i class="pageIconBox"><img src="img/ourLogo.png" alt=""></i>
+        <aside class="pageArrowBox"><span>&#62;</span><span>&#62;</span><span>&#62;</span><span>&#62;</span><span>&#62;</span></aside>
+        <i class="pageIconBox" style="float: right;"><img src="img/huiFu_icon.png" alt=""></i>
+    </section>
+</article>
+</body>
+</html>
