@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="whf">
+    <output-path>$PROJECT_DIR$/out/artifacts/whf</output-path>
+    <root id="root" />
+  </artifact>
+</component>
